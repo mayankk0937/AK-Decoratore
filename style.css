@@ -2182,7 +2182,7 @@ footer {
   align-items: center;
   justify-content: center;
   color: var(--color-bg-light);
-  overflow: hidden;
+  overflow: visible; /* Prevent text clipping */
   padding-top: 80px; /* Offset fixed header */
   background-color: var(--color-bronze);
 }
@@ -2390,9 +2390,11 @@ footer {
 /* Responsive Overrides */
 @media (max-width: 768px) {
   .library-hero {
-    height: 45vh;
-    min-height: 320px;
-    padding-top: 70px;
+    height: auto;
+    min-height: auto;
+    padding-top: 110px; /* Offset mobile fixed header (70px) + add spacing */
+    padding-bottom: 50px;
+    overflow: visible;
   }
   .library-hero-title {
     font-size: 1.8rem;
