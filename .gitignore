@@ -1,0 +1,24 @@
+# Node modules
+node_modules/
+
+# Next.js build outputs
+.next/
+next-env.d.ts
+
+# Backups and logs
+app_backup/
+next_backup/
+public_backup/
+build_log.txt
+
+# Local environment files
+.env*.local
+
+# Editor configuration files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
